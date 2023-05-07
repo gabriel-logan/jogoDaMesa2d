@@ -15,9 +15,9 @@ let pontoJogador1 =0
 let pontoJogador2 =0
 
 posicaoBolaX = posicaoBolaY = 50
-velocidadeDaBolaX = velocidadeDaBolaY = 6
+velocidadeDaBolaX = velocidadeDaBolaY = 8
 
-velocidadeJogador2 = 5
+velocidadeJogador2 = 4.5
 
 setInterval(jogo, 25)
 
