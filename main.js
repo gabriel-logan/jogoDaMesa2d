@@ -36,6 +36,10 @@ function jogo (){
     if(posicaoBolaX < 0){
         if(posicaoBolaY > posicaoYPlayer1 && posicaoBolaY < posicaoYPlayer1 + 80){
             velocidadeDaBolaX = -velocidadeDaBolaX
+            
+            let diferencaY = posicaoBolaY - (posicaoYPlayer1 + 40);
+            
+            velocidadeDaBolaY = diferencaY * 0.3
         }else{
             pontoJogador2 += 1
             posicaoBolaX = 600/2
@@ -46,6 +50,10 @@ function jogo (){
     if(posicaoBolaX > 590){
         if(posicaoBolaY > posicaoYPlayer2 && posicaoBolaY < posicaoYPlayer2 + 80){
             velocidadeDaBolaX = -velocidadeDaBolaX
+            
+            let diferencaY = posicaoBolaY - (posicaoYPlayer2 + 40);
+            
+            velocidadeDaBolaY = diferencaY * 0.3
         }else{
             pontoJogador1 += 1
             posicaoBolaX = 600/2
