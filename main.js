@@ -34,7 +34,7 @@ function jogo (){
     }
 
     if(posicaoBolaX < 0){
-        if(posicaoBolaY > posicaoYPlayer1 && posicaoBolaY < posicaoYPlayer1 + 80){
+        if(posicaoBolaY > posicaoYPlayer1 && posicaoBolaY < posicaoYPlayer1 + 100){
             velocidadeDaBolaX = -velocidadeDaBolaX
             
             let diferencaY = posicaoBolaY - (posicaoYPlayer1 + 40);
@@ -48,7 +48,7 @@ function jogo (){
     }
 
     if(posicaoBolaX > 590){
-        if(posicaoBolaY > posicaoYPlayer2 && posicaoBolaY < posicaoYPlayer2 + 80){
+        if(posicaoBolaY > posicaoYPlayer2 && posicaoBolaY < posicaoYPlayer2 + 100){
             velocidadeDaBolaX = -velocidadeDaBolaX
             
             let diferencaY = posicaoBolaY - (posicaoYPlayer2 + 40);
@@ -78,9 +78,9 @@ function jogo (){
     // Posição das Raquetes
     area.fillStyle = 'white';
     // Raquete1
-    area.fillRect(0,posicaoYPlayer1,3,80);
+    area.fillRect(0,posicaoYPlayer1,6,100);
     // Raquete2
-    area.fillRect(597,posicaoYPlayer2,3,80);
+    area.fillRect(597,posicaoYPlayer2,6,100);
 
     // Bola
     area.fillStyle = 'white';
